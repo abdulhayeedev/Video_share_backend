@@ -1,10 +1,10 @@
-# 🎬 Video Sharing Platform (Django + DRF)
+# Video Sharing Platform (Django + DRF)
 
 A RESTful backend API for a video sharing platform built with **Django**, **Django REST Framework**, and **JWT authentication**. Users can upload videos, comment, favorite, and manage their profiles.
 
 ---
 
-## 🚀 Features
+## Features
 
 - User Registration & JWT Login (Creator or Consumer)
 - Upload video files (local storage)
@@ -16,7 +16,7 @@ A RESTful backend API for a video sharing platform built with **Django**, **Djan
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 - **Backend**: Django, Django REST Framework
 - **Auth**: JWT (via SimpleJWT)
@@ -26,7 +26,7 @@ A RESTful backend API for a video sharing platform built with **Django**, **Djan
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -68,7 +68,7 @@ python manage.py runserver
 
 ---
 
-## 🔐 Authentication
+## Authentication
 
 ### Register
 
@@ -105,7 +105,7 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 
 ---
 
-## 📦 API Endpoints
+## API Endpoints
 
 | Method | Endpoint               | Description                |
 | ------ | ---------------------- | -------------------------- |
@@ -122,7 +122,7 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 
 ---
 
-## 📁 File Upload
+## File Upload
 
 * Upload videos using `multipart/form-data` with `video` field.
 * Files are saved to: `/media/videos/filename.mp4`
@@ -130,7 +130,7 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 
 ---
 
-## ⚙️ Admin Panel
+## Admin Panel
 
 Login at `/admin/` using superuser credentials.
 
@@ -139,13 +139,13 @@ Login at `/admin/` using superuser credentials.
 
 ---
 
-## 📝 License
+## License
 
 This project is open-sourced under the [MIT License](LICENSE).
 
 ---
 
-## 🤝 Contributions
+## Contributions
 
 Contributions, issues, and feature requests are welcome!
 Feel free to [open an issue](https://github.com/obaidullah72/video-platform-backend/issues).
