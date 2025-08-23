@@ -7,7 +7,11 @@ SECRET_KEY = 'django-insecure-s6s45(a=gexgo171(m84$n-(1^s(2feuk+o(ot=f@_fi_vvxjm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net',
+    'wonderful-sand-0f3d73e0f.1.azurestaticapps.net',
+    'video-share-frontend.vercel.app',
+]
 
 # Application definition
 
@@ -125,14 +129,11 @@ CORS_ALLOWED_ORIGINS = [
     "https://video-share-frontend.vercel.app",
     "https://wonderful-sand-0f3d73e0f.1.azurestaticapps.net",
     "http://localhost:3000",
-    "https://calm-pebble-07410f40f.1.azurestaticapps.net/login",
+    "https://calm-pebble-07410f40f.1.azurestaticapps.net",  # remove /login path
     "http://localhost:5173",
-    "http://localhost:3000",
-    "http://localhost:3001",  # ✅ add your actual frontend port
-    "https://6mqqg03m-8000.inc1.devtunnels.ms",  # ✅ your backend devtunnel URL
-    "https://videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net"
-    "https://video-share-frontend.vercel.app",
-    "https://wonderful-sand-0f3d73e0f.1.azurestaticapps.net",  # ✅ new frontend URL
+    "http://localhost:3001",
+    "https://6mqqg03m-8000.inc1.devtunnels.ms",
+    "https://videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
