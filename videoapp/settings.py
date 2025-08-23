@@ -121,14 +121,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Folder to store uploaded files
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://localhost:3000",
-    "http://localhost:3001",  # ✅ add your actual frontend port
-    "https://6mqqg03m-8000.inc1.devtunnels.ms",  
-    "https://calm-pebble-07410f40f.1.azurestaticapps.net",
-    "https://video-share-iota.vercel.app",
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_CREDENTIALS = True
 
