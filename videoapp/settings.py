@@ -121,7 +121,19 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Folder to store uploaded files
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://video-share-frontend.vercel.app",
+    "https://wonderful-sand-0f3d73e0f.1.azurestaticapps.net",
+    "http://localhost:3000",
+    "https://calm-pebble-07410f40f.1.azurestaticapps.net/login",
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "http://localhost:3001",  # ✅ add your actual frontend port
+    "https://6mqqg03m-8000.inc1.devtunnels.ms",  # ✅ your backend devtunnel URL
+    "https://videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net"
+    "https://video-share-frontend.vercel.app",
+    "https://wonderful-sand-0f3d73e0f.1.azurestaticapps.net",  # ✅ new frontend URL
+]
 
 CORS_ALLOW_CREDENTIALS = True
 
