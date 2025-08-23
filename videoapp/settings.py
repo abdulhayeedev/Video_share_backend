@@ -127,6 +127,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3001",  # ✅ add your actual frontend port
     "https://6mqqg03m-8000.inc1.devtunnels.ms",  
     "https://calm-pebble-07410f40f.1.azurestaticapps.net",
+    "https://video-share-iota.vercel.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
