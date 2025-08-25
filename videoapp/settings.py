@@ -3,9 +3,10 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s6s45(a=gexgo171(m84$n-(1^s(2feuk+o(ot=f@_fi_vvxjm'
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = [
     'videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net',
@@ -41,6 +42,7 @@ REST_FRAMEWORK = {
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -134,6 +136,13 @@ CORS_ALLOWED_ORIGINS = [
     "https://6mqqg03m-8000.inc1.devtunnels.ms",
     "https://videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net",
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://video-share-frontend.vercel.app",
+    "https://wonderful-sand-0f3d73e0f.1.azurestaticapps.net",
+    "https://videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net",
+]
+
 
 CORS_ALLOW_CREDENTIALS = True
 
