@@ -8,6 +8,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "django-insecure-s6s45(a=gexgo1
 DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = [
+    'videoshare-f3f4fjc2fehbfzah.canadacentral.azurewebsites.net',
     'videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net',
     'wonderful-sand-0f3d73e0f.1.azurestaticapps.net',
     'video-share-frontend.vercel.app',
@@ -139,7 +140,10 @@ CSRF_TRUSTED_ORIGINS = [
     "https://video-share-frontend.vercel.app",
     "https://wonderful-sand-0f3d73e0f.1.azurestaticapps.net",
     "https://videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net",
+    "https://videoshare-f3f4fjc2fehbfzah.canadacentral.azurewebsites.net",
 ]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 CORS_ALLOW_CREDENTIALS = True
