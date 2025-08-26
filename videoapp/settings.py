@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'videoapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('POSTGRES_DB', 'videoshare'),
+        'NAME': os.environ.get('POSTGRES_DB', 'videosharebe-database'),
         'USER': os.environ.get('POSTGRES_USER', 'abdulhayee'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD', '12341233'),
         'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
