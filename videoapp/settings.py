@@ -78,7 +78,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.environ.get('POSTGRES_DB', 'videosharebe-database'),
         'USER': os.environ.get('POSTGRES_USER', 'abdulhayee'),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', '12341233'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', '12341234'),
         'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
         'PORT': os.environ.get('POSTGRES_PORT', '5432'),
     }
