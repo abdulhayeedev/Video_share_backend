@@ -8,8 +8,8 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "django-insecure-s6s45(a=gexgo1
 DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = [
-    'videoshare-f3f4fjc2fehbfzah.canadacentral.azurewebsites.net',
-    'videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net',
+    'videosharebe-fjbhfzbbcbe9hbd5.canadacentral-01.azurewebsites.net',
+    'videosharebe-fjbhfzbbcbe9hbd5.canadacentral.azurewebsites.net',
     'wonderful-sand-0f3d73e0f.1.azurestaticapps.net',
     'video-share-frontend.vercel.app',
 ]
@@ -137,14 +137,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:3001",
     "https://6mqqg03m-8000.inc1.devtunnels.ms",
-    "https://videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net",
+    "https://videosharebe-fjbhfzbbcbe9hbd5.canadacentral-01.azurewebsites.net/",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://video-share-frontend.vercel.app",
     "https://wonderful-sand-0f3d73e0f.1.azurestaticapps.net",
-    "https://videoshare-f3f4fjc2fehbfzah.canadacentral-01.azurewebsites.net",
-    "https://videoshare-f3f4fjc2fehbfzah.canadacentral.azurewebsites.net",
+    "https://videosharebe-fjbhfzbbcbe9hbd5.canadacentral-01.azurewebsites.net",
+    "https://videosharebe-fjbhfzbbcbe9hbd5.canadacentral.azurewebsites.net",
 ]
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
