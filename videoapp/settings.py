@@ -5,14 +5,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "django-insecure-s6s45(a=gexgo171(m84$n-(1^s(2feuk+o(ot=f@_fi_vvxjm")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
-
-ALLOWED_HOSTS = [
-    'videosharebe-fjbhfzbbcbe9hbd5.canadacentral-01.azurewebsites.net',
-    'videosharebe-fjbhfzbbcbe9hbd5.canadacentral.azurewebsites.net',
-    'wonderful-sand-0f3d73e0f.1.azurestaticapps.net',
-    'video-share-frontend.vercel.app',
-]
+DEBUG = True
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -137,7 +131,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:3001",
     "https://6mqqg03m-8000.inc1.devtunnels.ms",
-    "https://videosharebe-fjbhfzbbcbe9hbd5.canadacentral-01.azurewebsites.net/",
+    "https://videosharebe-fjbhfzbbcbe9hbd5.canadacentral-01.azurewebsites.net",
+    "https://videosharebe-fjbhfzbbcbe9hbd5.canadacentral.azurewebsites.net",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
