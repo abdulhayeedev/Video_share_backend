@@ -70,13 +70,17 @@ WSGI_APPLICATION = 'videoapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('POSTGRES_DB', 'videosharebe-database'),
-        'USER': os.environ.get('POSTGRES_USER', 'abdulhayee'),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', '12341234'),
-        'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
+        'NAME': os.environ.get('POSTGRES_DB', 'postgres'),  # default DB in Azure
+        'USER': os.environ.get('POSTGRES_USER', 'video12@video-db'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'Prince1234'),
+        'HOST': os.environ.get('POSTGRES_HOST', 'video-db.postgres.database.azure.com'),
         'PORT': os.environ.get('POSTGRES_PORT', '5432'),
+        'OPTIONS': {
+            'sslmode': 'require',   # Azure PostgreSQL requires SSL
+        },
     }
 }
+
 
 
 # Password validation
