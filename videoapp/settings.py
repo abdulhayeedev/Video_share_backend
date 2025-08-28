@@ -70,7 +70,7 @@ WSGI_APPLICATION = 'videoapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('POSTGRES_DB', 'postgres'),  # default DB in Azure
+        'NAME': os.environ.get('POSTGRES_DB', 'videodb'),  # default DB in Azure
         'USER': os.environ.get('POSTGRES_USER', 'video12@video-db'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'Prince1234'),
         'HOST': os.environ.get('POSTGRES_HOST', 'video-db.postgres.database.azure.com'),
